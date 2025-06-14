@@ -4,9 +4,17 @@ import { registerSettings } from "./settings.js";
 const socketName = `module.${constants.modName}`;
 
 const closeImagePopout = () => {
-   const imagePopout = document.querySelector(".image-popout a.close");
+   const imagePopout = document.querySelector(
+      '.image-popout button[data-action="close"'
+   );
    if (imagePopout) {
       imagePopout.click();
+      return;
+   }
+
+   const legacyImagePopout = document.querySelector(".image-popout a.close");
+   if (legacyImagePopout) {
+      legacyImagePopout.click();
       return;
    }
 
