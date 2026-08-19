@@ -3,7 +3,7 @@
         "settings": {
             "hotkey": {
                 "name": "Hotkey",
-                "hint": "Binds the close player art action to this key. Default `"
+                "hint": "Binds the close player art action to this key. Default Shift + ` (backtick)."
             }
         }
     }

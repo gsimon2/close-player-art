@@ -29,7 +29,7 @@ Hooks.on("init", () => {
     game.keybindings.register(constants.modName, "hotkey", {
         name: `${constants.modName}.settings.hotkey.name`,
         hint: `${constants.modName}.settings.hotkey.hint`,
-        editable: [{ key: "Backtick", modifiers: [] }],
+        editable: [{ key: "`", modifiers: ["Shift"] }],
         onDown: (e) => {
             if (game.user.isGM === true) {
                 if (
